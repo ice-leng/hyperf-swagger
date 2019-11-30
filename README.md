@@ -119,7 +119,8 @@ Todo list
 --------
  - [x] Swagger Ui2
  - [x] Swagger Ui3
- - [ ] Other Swagger Ui Theme
+ - [x] Read Swaager Annotation Generator Openapi
  - [ ] Swaager Generator Annotation
+ - [ ] Other Swagger Ui Theme
 
 
