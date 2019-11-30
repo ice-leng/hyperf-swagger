@@ -8,7 +8,7 @@ return [
     //support url array eg:  ['xxxx']  or ["name" => "xxx", "url" => "xxx"]
     'urls'               => [],
     //  swagger version , support 2, 3, default 3
-    'version'            => \Common\Swagger\Swagger::SWAGGER_VERSION_DEFAULT,
+    'version'            => \Lengbin\Hyperf\Swagger\Swagger::SWAGGER_VERSION_DEFAULT,
     // The OAuth configration
     'oauthConfiguration' => [],
 ];
