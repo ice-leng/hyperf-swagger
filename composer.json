@@ -1,0 +1,28 @@
+{
+  "name": "lengbin/hyperf-swagger",
+  "description": "hyperf swagger",
+  "type": "library",
+  "keywords": ["php", "hyperf","extension","swagger", "swagger Ui"],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.2.0",
+    "zircote/swagger-php": "2.0.14"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Lengbin\\Hyperf\\Swagger\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "lengbin",
+      "email": "xykxyk2008@163.com"
+    }
+  ],
+  "extra": {
+    "hyperf": {
+      "config": "Lengbin\\Hyperf\\Swagger\\ConfigProvider"
+    }
+  }
+}
