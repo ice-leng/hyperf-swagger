@@ -37,7 +37,7 @@ Request
 Configs
 -----
 ``` php
-    /config/server.php
+    /config/autoload/server.php
     
     return [
         ......
