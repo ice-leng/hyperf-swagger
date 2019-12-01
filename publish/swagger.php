@@ -5,8 +5,6 @@ return [
     'path'               => 'swagger',
     //api url
     'url'                => '/swagger/api',
-    //support url array eg:  ['xxxx']  or ["name" => "xxx", "url" => "xxx"]
-    'urls'               => [],
     //  swagger version , support 2, 3, default 3
     'version'            => \Lengbin\Hyperf\Swagger\Swagger::SWAGGER_VERSION_DEFAULT,
     // The OAuth configration
