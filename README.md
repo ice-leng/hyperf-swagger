@@ -33,6 +33,9 @@ Request
 "zircote/swagger-php": "2.0.14"
 ```
 
+If want to test api .
+Please look [annocation](https://blog.csdn.net/dyt19941205/article/details/79025266)
+
 
 Configs
 -----
