@@ -114,6 +114,25 @@ class SwaggerController extends AbstractController
             $path,
         ]);
     }
+    
+    /**
+     * @GetMapping(path="/swagger/generator")
+     */
+    public function generator()
+    {
+        return $this->swagger->generator($this->request);
+    }
+
+    /**
+     * @RequestMapping(path="/swagger/annotation", methods={"GET", "POST"})
+     */
+    public function annotation()
+    {
+        // 扫码目录path, 生成注释文档目录
+        $path = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'swagger';
+        return ['code' => 0, 'message' => 'Success', 'data' => $this->swagger->annotation($this->request, $path)];
+    }
+
 }
 
 ```
@@ -123,7 +142,7 @@ Todo list
  - [x] Swagger Ui2
  - [x] Swagger Ui3
  - [x] Read Swaager Annotation Generator Openapi
- - [ ] Swaager Generator Annotation
+ - [x] [Swaager Generator Annotation](https://github.com/ice-leng/vue-swagger)
  - [ ] Other Swagger Ui Theme
 
 
@@ -131,3 +150,5 @@ Screenshots
 -----------
 ![SwaggerUi3](./image/SwaggerUi3.0.png)
 ![SwaggerUi2](./image/SwaggerUi2.0.jpg)
+![main](./image/main.png)
+![definition](./image/definition.png)
