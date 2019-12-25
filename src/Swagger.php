@@ -12,7 +12,6 @@ use Hyperf\HttpServer\Exception\Http\NotFoundException;
 use Hyperf\Logger\Exception\InvalidConfigException;
 use Hyperf\Utils\Codec\Json;
 use Hyperf\Utils\Context;
-use Hyperf\Utils\Str;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\SimpleCache\CacheInterface;
