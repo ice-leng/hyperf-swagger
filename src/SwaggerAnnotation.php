@@ -95,7 +95,7 @@ class SwaggerAnnotation
             }
 
             $string = $filed . ' = "' . $value . '"';
-            if (in_array($filed, ['example', 'default']) || is_bool($value)) {
+            if (in_array($filed, ['example', 'default', 'required']) || is_bool($value)) {
                 if (strlen((string)$value) <= 0) {
                     continue;
                 }
