@@ -96,7 +96,7 @@ class SwaggerAnnotation
 
             $string = $filed . ' = "' . $value . '"';
             if (in_array($filed, ['example', 'default']) || is_bool($value)) {
-                if (strlen($value) <= 0) {
+                if (strlen((string)$value) <= 0) {
                     continue;
                 }
                 $status = false;
@@ -455,7 +455,7 @@ security;
 
     protected function fomateAnnotation($file, $content, $isAdd = false)
     {
-        if (is_file($file) || $isAdd) {
+        if (($file && is_file($file)) || $isAdd) {
             $content = "/**\n" . $content . "\n */";
         } else {
             $content = "<?php\n/**\n" . $content . "\n */";
