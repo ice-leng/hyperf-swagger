@@ -232,7 +232,7 @@ class SwaggerController extends AbstractController
 
     /**
      * swagger ui 
-     * @GetMapping(path="/swaager")
+     * @GetMapping(path="/swagger")
      */
     public function index()
     {
