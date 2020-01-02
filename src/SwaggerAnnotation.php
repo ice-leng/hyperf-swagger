@@ -264,8 +264,9 @@ end;
         $tags = $this->toJsonString($this->generator->tags);
         $consumes = $this->toJsonString($this->generator->consumes);
         $produces = $this->toJsonString($this->generator->produces);
+        $method = ucfirst($this->generator->method);
         return <<<base
- * @SWG\\{$this->generator->method}(
+ * @SWG\\{$method}(
  *    path="{$this->generator->path}",
  *    tags={$tags}, 
  *    summary="{$this->generator->summary}",
