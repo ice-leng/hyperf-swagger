@@ -96,6 +96,7 @@ class SwaggerController extends AbstractController
     public $swagger;
 
     /**
+     * swagger ui 
      * @GetMapping(path="/swaager")
      */
     public function index()
@@ -104,6 +105,7 @@ class SwaggerController extends AbstractController
     }
 
     /**
+     * swagger open api
      * @GetMapping(path="/swagger/api")
      */
     public function api()
@@ -116,6 +118,7 @@ class SwaggerController extends AbstractController
     }
     
     /**
+     * swagger web -> generator annotation
      * @GetMapping(path="/swagger/generator")
      */
     public function generator()
@@ -124,6 +127,7 @@ class SwaggerController extends AbstractController
     }
 
     /**
+     * swagger web api
      * @RequestMapping(path="/swagger/annotation", methods={"GET", "POST"})
      */
     public function annotation()
